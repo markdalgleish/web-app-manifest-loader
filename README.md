@@ -1,8 +1,8 @@
 [![npm](https://img.shields.io/npm/v/web-app-manifest-loader.svg?style=flat-square)](https://www.npmjs.com/package/web-app-manifest-loader)
 
-# web app manifest loader for webpack
+# web-app-manifest-loader
 
-Load images referenced in the `icons` and `splash_screens` fields in your [Web App Manifest](http://www.w3.org/TR/appmanifest/).
+Load images referenced in the `icons` and `splash_screens` fields in your [Web App Manifest](http://www.w3.org/TR/appmanifest/) using [webpack](https://github.com/webpack/webpack).
 
 ```bash
 $ npm install --save-dev web-app-manifest-loader
