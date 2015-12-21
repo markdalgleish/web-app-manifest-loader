@@ -1,0 +1,23 @@
+{
+  "name": "web-app-manifest-loader",
+  "version": "0.0.0",
+  "description": "Web app manifest loader for webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markdalgleish/web-app-manifest-loader.git"
+  },
+  "author": "Mark Dalgleish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markdalgleish/web-app-manifest-loader/issues"
+  },
+  "homepage": "https://github.com/markdalgleish/web-app-manifest-loader#readme",
+  "dependencies": {
+    "loader-utils": "^0.2.12",
+    "steed": "^1.1.2"
+  }
+}
