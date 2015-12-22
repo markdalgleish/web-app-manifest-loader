@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/web-app-manifest-loader.svg?style=flat-square)](https://www.npmjs.com/package/web-app-manifest-loader)
+[![Build Status](https://img.shields.io/travis/markdalgleish/web-app-manifest-loader/master.svg?style=flat-square)](http://travis-ci.org/markdalgleish/web-app-manifest-loader) [![npm](https://img.shields.io/npm/v/web-app-manifest-loader.svg?style=flat-square)](https://www.npmjs.com/package/web-app-manifest-loader)
 
 # web-app-manifest-loader
 
