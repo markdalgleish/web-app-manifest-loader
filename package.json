@@ -4,7 +4,8 @@
   "description": "Web app manifest loader for webpack",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover _mocha test -- --timeout 20000"
+    "test": "istanbul cover _mocha test -- --timeout 20000",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "chai": "^3.4.1",
+    "coveralls": "^2.11.6",
     "file-loader": "^0.8.5",
     "glob": "^6.0.1",
     "istanbul": "^0.4.1",
