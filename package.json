@@ -4,7 +4,7 @@
   "description": "Web app manifest loader for webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "istanbul cover _mocha test -- --timeout 20000"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,14 @@
   "dependencies": {
     "loader-utils": "^0.2.12",
     "steed": "^1.1.2"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "file-loader": "^0.8.5",
+    "glob": "^6.0.1",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4",
+    "rimraf": "^2.4.5",
+    "webpack": "^1.12.9"
   }
 }
