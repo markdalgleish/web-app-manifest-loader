@@ -44,10 +44,14 @@ function resolveImages(loaderContext, manifest, key, callback) {
 }
 
 module.exports = function(source) {
-  var manifest = JSON.parse(source);
-
   var loaderContext = this;
   var callback = loaderContext.async();
+
+  try {
+    var manifest = JSON.parse(source);
+  } catch (err) {
+    return callback(new Error('Invalid JSON in Web App Manifest'));
+  }
 
   steed.parallel([
     resolveImages.bind(null, loaderContext, manifest, 'splash_screens'),
