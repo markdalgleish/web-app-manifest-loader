@@ -1,0 +1,27 @@
+{
+  "name": "Inline Loaders Test",
+  "splash_screens": [
+    {
+      "src": "splash_1.output.gif",
+      "sizes": "1920x1080",
+      "type": "image/png"
+    },
+    {
+      "src": "splash_2.output.gif",
+      "sizes": "2560x1440",
+      "type": "image/png"
+    }
+  ],
+  "icons": [
+    {
+      "src": "icon_1.output.gif",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_2.output.gif",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
