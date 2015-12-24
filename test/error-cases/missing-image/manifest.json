@@ -1,0 +1,10 @@
+{
+  "name": "Missing Image",
+  "icons": [
+    {
+      "src": "./i-dont-exist.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
