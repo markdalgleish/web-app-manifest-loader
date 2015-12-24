@@ -1,6 +1,6 @@
 {
   "name": "web-app-manifest-loader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Web app manifest loader for webpack",
   "main": "index.js",
   "scripts": {
