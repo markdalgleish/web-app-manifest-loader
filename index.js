@@ -3,6 +3,10 @@ var loaderUtils = require('loader-utils');
 var steed = require('steed');
 
 function resolveImageSrc(loaderContext, image, callback) {
+  if (typeof image.src !== 'string') {
+    return callback(new Error('Missing image "src" property in Web App Manifest'));
+  }
+
   var dirname = path.dirname(loaderContext.resourcePath);
 
   // Resolve the image filename relative to the manifest file
@@ -34,7 +38,7 @@ function resolveImages(loaderContext, manifest, key, callback) {
     return callback(null);
   }
 
-  steed.each(manifest[key], resolveImageSrc.bind(null, loaderContext), function(err) {
+  steed.map(manifest[key], resolveImageSrc.bind(null, loaderContext), function(err) {
     if (err) {
       return callback(err);
     }
