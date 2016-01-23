@@ -1,0 +1,27 @@
+{
+  "name": "Basic Test",
+  "splash_screens": [
+    {
+      "src": "http://some-cdn.com/splash_1.gif",
+      "sizes": "1920x1080",
+      "type": "image/png"
+    },
+    {
+      "src": "http://some-cdn.com/splash_2.gif",
+      "sizes": "2560x1440",
+      "type": "image/png"
+    }
+  ],
+  "icons": [
+    {
+      "src": "http://some-cdn.com/icon_1.gif",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "http://some-cdn.com/icon_2.gif",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
