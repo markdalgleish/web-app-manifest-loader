@@ -8,6 +8,7 @@ function resolveImageSrc(loaderContext, image, callback) {
   }
 
   var dirname = path.dirname(loaderContext.resourcePath);
+  var publicPath = loaderContext.options.output.publicPath || '';
 
   // Resolve the image filename relative to the manifest file
   loaderContext.resolve(dirname, image.src, function(err, filename) {
@@ -26,7 +27,7 @@ function resolveImageSrc(loaderContext, image, callback) {
 
       // Update the image src property to match the generated filename
       // Is it always the first key in the assets object?
-      image.src = Object.keys(module.assets)[0];
+      image.src = publicPath + Object.keys(module.assets)[0];
 
       callback(null);
     });
